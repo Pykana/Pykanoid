@@ -15,4 +15,11 @@ public class bola : MonoBehaviour
         rigidbody2D.AddForce(velocity*speed);
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("DeadZone")) { 
+        
+        }
+    }
 }
